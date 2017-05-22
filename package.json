@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "engine": {
+  "engines": {
     "node": "6.10.3",
     "npm": "4.6.1"
   },
