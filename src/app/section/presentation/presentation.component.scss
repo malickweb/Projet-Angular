@@ -1,0 +1,57 @@
+@import "../../../sass/color";
+
+$img-presentation: url("../../../assets/images/logo-main1.jpg") no-repeat center center fixed;
+$bold: "Nunito-Bold";
+
+#presentation {
+  min-height: 650px;
+  background: $img-presentation;
+  background-size: cover;
+
+  section {
+    padding-top: 60px;
+    overflow: hidden;
+  }
+}
+
+h1 {
+  font-family: $bold;
+}
+
+.text-test {
+  font-size: 16px;
+}
+
+.box-logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 30px 0 0;
+  padding: 25px;
+  background-color: $black;
+  overflow: hidden;
+}
+
+$buttons: (
+ (h1 red),
+ (h2 green),
+ (h3 blue)
+);
+
+@each $site, $color in $buttons {
+  #{$site} {
+    border: 1px solid $color;
+  }
+}
+$headings: (
+ h1: 7em,
+ h2: 5em,
+ h3: 3em
+);
+
+@each $heading, $size in $headings {
+  #{$heading} {
+    font-size: $size;
+  }
+}

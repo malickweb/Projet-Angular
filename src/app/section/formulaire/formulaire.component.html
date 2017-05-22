@@ -1,0 +1,74 @@
+<div id="formulaire">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center">{{ title }}</h1>
+          <form #formulaire="ngForm"
+                (ngSubmit)="onSubmit()">
+            {{diagnostic}}
+            <div class="form-group">
+              <label for="name">Name *</label>
+
+              <input type="text"
+                     id="name"
+                     class="form-control"
+                     placeholder="Your name"
+                     [(ngModel)]="model.name"
+                     name="name"
+                     #name="ngModel"
+                     pattern="[a-zA-Z ]*"
+                     ngModel
+                     required />
+
+              <div *ngIf="name.touched && !name.valid"
+                   class="alert alert-danger">
+                Name is required
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+
+              <input type="email"
+                     id="email"
+                     class="form-control"
+                     placeholder="Your email"
+                     [(ngModel)]="model.email"
+                     name="email"
+                     #email="ngModel"
+                     email
+                     ngModel
+                     required />
+
+              <div class="alert alert-danger"
+                   *ngIf="email.touched && !email.valid">Email is required</div>
+
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+
+              <textarea id="message"
+                        class="form-control"
+                        name="message"
+                        rows="8"
+                        cols="80"
+                        [(ngModel)]="model.message"
+                        required>
+              </textarea>
+            </div>
+
+            <button type="submit"
+                    class="btn btn-success"
+                    [disabled]="!formulaire.form.valid"
+                    (click)="form()">submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<form #f="ngForm">
+   <input type="email" ngModel name="email" required email>
+   <button [disabled]="!f.valid">Submit</button>
+   <p>Form State: {{f.valid?'VALID':'INVALID'}}</p>
+ </form>

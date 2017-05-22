@@ -1,0 +1,54 @@
+html {
+  height: 100%;
+
+  body {
+    height: 100%;
+    font-family: "Nunito";
+  }
+}
+
+section {
+  padding: 25px 0;
+}
+
+ul {
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+.card {
+  min-height: 200px;
+  margin: 10px;
+  padding: 10px 15px;
+  box-shadow: 3px 5px 6px 2px #c0c0c0;
+}
+
+// Loop id#
+
+$ids: (
+ #presentation,
+ #competence,
+ #site,
+ #formulaire
+);
+
+@each $id in $ids {
+  #{$id} {
+    padding: 50px 0 0;
+  }
+}
+
+$imgs: (
+ #presentation,
+ #formulaire
+);
+
+@each $img in $imgs {
+  #{$img} {
+    position: relative;
+    height: 100%;
+  }
+}

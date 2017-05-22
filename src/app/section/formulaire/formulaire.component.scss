@@ -1,0 +1,38 @@
+@import "../../../sass/color";
+
+$img-formulaire: url("../../../assets/images/logo-main1.jpg") no-repeat center center fixed;
+
+#formulaire {
+  min-height: 750px;
+  background: $img-formulaire;
+  background-size: cover;
+}
+
+label, input, textarea {
+  display: block;
+  margin: 10px 0;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid $green; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid $red; /* red */
+}
+
+button[disabled], button[disabled]:hover {
+  border-left: 5px solid $red;
+}
+
+.star {
+      font-size: 1.5rem;
+      color: #b0c4de;
+}
+.filled {
+  color: #1e90ff;
+}
+
+ngb-progressbar {
+  margin-top: 5rem;
+}

@@ -1,0 +1,30 @@
+<div id="projet">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center">{{ title }}</h1>
+          <ul>
+            <li class="col-sm-12 col-md-6" *ngFor="let c of sites; let index = index" >
+              <div class="card">
+                  <a href="{{ c.link }}">
+                    <h1>{{ c.title }}</h1>
+                    <img [src]="c.url" [alt]="c.title">
+                  </a>
+                  <h4>{{ c.info }}</h4>
+                  <div>
+                    <ol>
+                      <li *ngFor="let item of c.taff">
+                        {{ item }}
+                      </li>
+                    </ol>
+                  </div>
+                  {{index}}
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

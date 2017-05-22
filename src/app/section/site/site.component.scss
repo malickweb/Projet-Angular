@@ -1,0 +1,52 @@
+@import ".../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+$path-taxi: "../../../assets/images/taxi-moto.png";
+$path-shopping: "../../../assets/images/shopping-flux.png";
+
+$img: (
+ (taxi-moto $path-taxi),
+ (shopping-flux $path-shopping)
+);
+
+@each $site, $color in $img {
+  .#{$site} {
+    @include size(100%, 255px);
+    // width: 100%;
+    // height: 255px;
+    background-size: 100%;
+
+  }
+}
+
+// @mixin transition($args...) {
+//   -moz-transition: $args;
+//   -ms-transition: $args;
+//   -o-transition: $args;
+//   -webkit-transition: $args;
+//   transition: $args;
+// }
+
+.card {
+  min-height: 650px;
+
+  a {
+    display: block;
+    padding: 15px 0;
+    @include transition(color .5s linear);
+
+    &:hover {
+      color: red;
+      @include transition(color .5s linear);
+    }
+    h1 {
+      text-align: center;
+    }
+  }
+  img {
+    width: 100%;
+    box-shadow: 3px 5px 6px 2px #c0c0c0;
+  }
+  ul {
+    text-align: left;
+  }
+}
