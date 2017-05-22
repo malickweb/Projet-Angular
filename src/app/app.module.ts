@@ -9,7 +9,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AppComponent } from './app.component';
-// import { RouterNavComponent } from './router-nav/router-nav.component';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './header/nav/nav.component';
 import { SectionComponent } from './section/section.component';
@@ -28,7 +27,6 @@ import { SiteComponent } from './section/site/site.component';
     CompetencesComponent,
     FormulaireComponent,
     SiteComponent
-    // RouterNavComponent
   ],
   imports: [
     BrowserModule,
