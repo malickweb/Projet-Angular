@@ -1,8 +1,16 @@
-img {
-  display: block;
-  margin: 0 auto 10px;
-}
+.card {
 
-span {
-  padding: 15px;
+  img {
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    font: {
+      family : "Nunito-Bold";
+      size: 20px;
+    }
+  }
 }

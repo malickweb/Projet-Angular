@@ -5,11 +5,17 @@
         <div class="col-xs-12">
           <h1 class="text-center">{{ title }}</h1>
           <ul >
-            <li class="col-sm-12 col-md-6 col-lg-4" *ngFor="let c of competences; let index = index" >
+            <li class="col-sm-12 col-md-6 col-lg-4 {{c.offset}}"
+                *ngFor="let c of competences; let index = index">
               <div class="{{c.lang}} card">
                 <img [src]="c.url" [alt]="c.skill">
-                  {{ c.level }} % {{ c.skill }} {{ c.class }}
+                <p>
+                  {{ c.skill }}
+                </p>
+                <p>
+                  {{ c.level }} %
                   {{index}}
+                </p>
               </div>
             </li>
           </ul>

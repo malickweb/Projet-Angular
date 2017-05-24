@@ -3,6 +3,7 @@ export class Competence {
       public url: any,
       public skill: string,
       public lang: string,
-      public level: number
+      public level: number,
+      public offset?: string
   ){}
 }

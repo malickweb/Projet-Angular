@@ -21,7 +21,7 @@ export class CompetencesComponent implements OnInit {
     new Competence(this.path + 'angular-logo.png', 'Angular-CLI', 'angular', 70),
     new Competence(this.path + 'php-logo.png', 'PHP', 'php', 50),
     new Competence(this.path + 'sass-logo.png', 'SASS', 'sass', 75),
-    new Competence(this.path + 'gulp-logo.png', 'GULP', 'gulp', 75),
+    new Competence(this.path + 'gulp-logo.png', 'GULP', 'gulp', 75, 'col-lg-offset-2'),
     new Competence(this.path + 'photoshop-logo.png', 'Photoshop', 'photoshop', 60)
   ];
 

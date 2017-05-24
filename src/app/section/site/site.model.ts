@@ -4,7 +4,8 @@ export class Site {
       public url: string,
       public link: string,
       public info:string,
-      public taff?: Taff
+      public taff?: Taff,
+      public offset?: string
     ){}
 }
 
