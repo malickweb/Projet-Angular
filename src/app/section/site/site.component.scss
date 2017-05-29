@@ -2,6 +2,7 @@
 
 $path-taxi: "../../../assets/images/taxi-moto.png";
 $path-shopping: "../../../assets/images/shopping-flux.png";
+$color-base: #9d9d9d;
 
 $img: (
  (taxi-moto $path-taxi),
@@ -18,7 +19,7 @@ $img: (
 .card {
   min-height: 700px;
 
-  //screen phone; Padding: top, bottom;
+  //screen phone; min-height card;
   @media (max-width: 768px) {
     min-height: 500px;
   }
@@ -26,15 +27,15 @@ $img: (
   a {
     display: block;
     padding: 15px 0;
-    @include transition(color .5s linear);
+    color: inherit;
 
-    &:hover {
-      color: red;
-      @include transition(color .5s linear);
+    h2 {
+      font-family: "Nunito-Bold";
+      margin: 20px 0;
     }
 
-    h1 {
-      text-align: center;
+    &:hover {
+      text-decoration: none;
     }
   }
 
@@ -43,11 +44,19 @@ $img: (
     box-shadow: 3px 5px 6px 2px #c0c0c0;
   }
 
-  ul {
-    text-align: left;
+  h4 {
+    font-family: "Nunito-Bold";
+    margin: 20px 0;
+  }
 
-    // li {
-    //   padding: 5px 20px;
-    // }
+  ul {
+    li {
+      padding: 5px 15px 0;
+
+      //screen phone; padding reset;
+      @media (max-width: 768px) {
+        padding: 0;
+      }
+    }
   }
 }

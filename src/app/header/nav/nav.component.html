@@ -1,6 +1,6 @@
 <nav id="header"
-     [ngClass]="{navPadding: headerScroll}"
-     class="navbar navbar-fixed-top navbar-inverse">
+     class="navbar navbar-fixed-top navbar-inverse"
+     [ngClass]="{navPaddingPhone: headerScroll}">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -14,13 +14,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand"
+         href="#">
         <img class="logo" [src]="log" />
       </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse"
+         id="bs-example-navbar-collapse-1"
+         [ngClass]="{navPaddingTab: headerScroll}">
       <ul class="nav navbar-nav hidden-md hidden-lg">
         <li *ngFor="let link of links; let i= index"
             [ngClass]="{'selected': selectedIndex == i}"

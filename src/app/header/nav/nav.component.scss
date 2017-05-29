@@ -6,6 +6,7 @@ nav {
 
   img.logo {
     width: 100px;
+    @include transition(margin .2s linear);
   }
 
   li.selected {
@@ -22,12 +23,21 @@ nav {
   .navbar-nav {
       float: right;
   }
+
+  div.navPaddingTab.collapse {
+    padding: 15px 0;
+    @include transition(padding .2s linear);
+    ul li img {
+      margin: 5px 0;
+      @include transition(margin .2s linear);
+    }
+  }
 }
 
 //screen phone; Padding: top, bottom;
 @media (max-width: 768px) {
-  .navPadding {
-    padding: 25px 0;
+  .navPaddingPhone {
+    padding: 20px 0;
     @include transition(padding .2s linear);
   }
 }

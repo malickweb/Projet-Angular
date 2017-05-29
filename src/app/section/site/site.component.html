@@ -8,20 +8,18 @@
             <li class="col-sm-12 col-md-6 {{c.offset}}"
                 *ngFor="let c of sites; let index = index" >
               <div class="card">
-                  <a href="{{ c.link }}">
-                    <h1>{{ c.title }}</h1>
-                    <img [src]="c.url" [alt]="c.title">
-                  </a>
-                  <h4>{{ c.info }}</h4>
-                  <div>
-                    <ul>
-                      <li *ngFor="let item of c.taff">
-                        {{ item }}
-                      </li>
-                    </ul>
-                  </div>
-                  {{index}}
-                </div>
+                <a href="{{ c.link }}">
+                  <h2 class="text-center">{{ c.title }}</h2>
+                  <img [src]="c.url" [alt]="c.title">
+                </a>
+                <h4>{{ c.info }}</h4>
+                <ul>
+                  <li *ngFor="let item of c.taff">
+                    {{ item }}
+                  </li>
+                </ul>
+                <p>{{index}}</p>
+              </div>
             </li>
           </ul>
         </div>
