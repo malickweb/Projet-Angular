@@ -16,6 +16,7 @@ import { PresentationComponent } from './section/presentation/presentation.compo
 import { CompetencesComponent } from './section/competences/competences.component';
 import { FormulaireComponent } from './section/formulaire/formulaire.component';
 import { SiteComponent } from './section/site/site.component';
+import { TestDirective } from './header/test/test.directive';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SiteComponent } from './section/site/site.component';
     PresentationComponent,
     CompetencesComponent,
     FormulaireComponent,
-    SiteComponent
+    SiteComponent,
+    TestDirective
   ],
   imports: [
     BrowserModule,

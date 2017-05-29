@@ -1,9 +1,8 @@
+@import ".../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
 nav {
-  position: fixed;
-  width: 100%;
-  margin: 0;
-  box-shadow: 0px 1px 5px 1px #e7e7e7;
-  z-index: 5;
+  box-shadow: 0px 1px 5px 1px #222;
+  @include transition(padding .2s linear);
 
   img.logo {
     width: 100px;
@@ -22,5 +21,13 @@ nav {
 @media (min-width: 768px) {
   .navbar-nav {
       float: right;
+  }
+}
+
+//screen phone; Padding: top, bottom;
+@media (max-width: 768px) {
+  .navPadding {
+    padding: 25px 0;
+    @include transition(padding .2s linear);
   }
 }

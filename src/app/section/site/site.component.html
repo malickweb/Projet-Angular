@@ -5,7 +5,7 @@
         <div class="col-xs-12">
           <h1 class="text-center">{{ title }}</h1>
           <ul>
-            <li class="col-sm-12 col-md-6 {{c.offset}}" 
+            <li class="col-sm-12 col-md-6 {{c.offset}}"
                 *ngFor="let c of sites; let index = index" >
               <div class="card">
                   <a href="{{ c.link }}">
@@ -14,11 +14,11 @@
                   </a>
                   <h4>{{ c.info }}</h4>
                   <div>
-                    <ol>
+                    <ul>
                       <li *ngFor="let item of c.taff">
                         {{ item }}
                       </li>
-                    </ol>
+                    </ul>
                   </div>
                   {{index}}
                 </div>

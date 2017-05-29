@@ -13,14 +13,17 @@ export class SiteComponent implements OnInit {
   public sites: Array<Site> = [
     new Site(
       'Site de présentation',
-      './assets/images/logos/taxi-moto.jpg',
+      './assets/images/site-pres.png',
       'https://site-en-node.herokuapp.com/',
       'Site de Présentation',
       [
         'Intégration HTML5 / CSS3',
         'Intégration Mobile-first',
         'JavaScript Natif + jQuery',
+        'Industrialisation avec Grunt (Sass, uglify, concat ...)',
         'Formulaire de contact (PHP 5 + JavaScript)',
+        'Responsive design',
+        'Bootstrap',
         'Optimisation du référencement naturel SEO'
       ]
     ),
