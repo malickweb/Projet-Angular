@@ -4,6 +4,10 @@ nav {
   box-shadow: 0px 1px 5px 1px #222;
   @include transition(padding .2s linear);
 
+  .collapse {
+    @include transition(padding .2s linear);
+  }
+
   img.logo {
     width: 100px;
     @include transition(margin .2s linear);

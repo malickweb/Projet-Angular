@@ -5,7 +5,8 @@
         <div class="col-xs-12">
           <h1 class="text-center">{{ title }}</h1>
           <form #formulaire="ngForm"
-                (ngSubmit)="onSubmit()">
+                (ngSubmit)="onSubmit()"
+                action="send()">
             {{diagnostic}}
             <div class="form-group">
               <label for="name">Name *</label>
@@ -61,7 +62,7 @@
             <button type="submit"
                     class="btn btn-success"
                     [disabled]="!formulaire.form.valid"
-                    (click)="form()">submit</button>
+                    (click)="sendEmail()">submit</button>
           </form>
         </div>
       </div>
