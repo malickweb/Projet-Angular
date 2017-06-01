@@ -6,20 +6,20 @@ import {
 @Component({
   selector: 'app-presentation',
   templateUrl: './presentation.component.html',
-   styleUrls: ['./presentation.component.scss'],
+  styleUrls: ['./presentation.component.scss']
   // animations: [
   //   trigger('hoverPanel', [
-  //          state('inactive', style({
-  //             // transform: 'scale(0.7)',
-  //              backgroundColor: '#eee',
-  //              width: '100px',
-  //              color: '#000'
-  //          })),
   //          state('active', style({
-  //             //  transform: 'scale(0.9)',
-  //              backgroundColor: '#098fdc',
-  //              width: '1000px',
-  //              color: '#fff'
+  //             transform: 'scale(0.7)',
+  //             backgroundColor: '#eee',
+  //             //width: '1000px',
+  //             color: '#000'
+  //          })),
+  //          state('inactive', style({
+  //             transform: 'scale(0.9)',
+  //             backgroundColor: '#098fdc',
+  //             //width: '1500px',
+  //             color: '#fff'
   //          })),
   //          transition('inactive => active', animate('500ms ease-in')),
   //          transition('active => inactive', animate('500ms ease-out'))
@@ -62,18 +62,23 @@ export class PresentationComponent {
 //   console.log(event.target.innerWidth);
 //   console.log(event.target.innerHeight);
 // }
-//   constructor() { }
-//   state: string = 'inactive';
-//   state1: string = 'inactive';
-//   toggleMove() {
-//       this.state = (this.state === 'inactive' ? 'active' : 'inactive');
-//   }
-//   mouseEnter(div : string){
-//     this.state1 = (this.state1 === 'inactive' ? 'active' : 'inactive');
-//     console.log("mouse enter : " + div);
-//    }
-//
-//    mouseLeave(div : string){
-//      console.log('mouse leave :' + div);
-//    }
+  constructor() { }
+  state: string = 'inactive';
+  state1: string = 'inactive';
+  toggleMove() {
+      this.state = (this.state === 'inactive' ? 'active' : 'inactive');
+  }
+
+  hoverMove() {
+      this.state = (this.state === 'inactive' ? 'active' : 'inactive');
+  }
+
+  mouseEnter(div : string){
+    this.state1 = (this.state1 === 'inactive' ? 'active' : 'inactive');
+    console.log("mouse enter : " + div);
+   }
+
+   mouseLeave(div : string){
+     console.log('mouse leave :' + div);
+   }
 }

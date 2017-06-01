@@ -36,6 +36,10 @@
   ul {
     li {
       padding: 5px 15px 0;
+      &:before {
+        content: "";
+        list-style-type: lower-latin;
+      }
 
       //screen phone; padding reset;
       @media (max-width: 768px) {

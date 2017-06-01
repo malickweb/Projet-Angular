@@ -6,7 +6,7 @@
           <h1 class="text-center">{{ title }}</h1>
           <form #formulaire="ngForm"
                 (ngSubmit)="onSubmit()"
-                action="send()"
+                action="form()"
                 *ngIf="!contact">
             <div class="form-group">
               <label for="name">Nom *</label>
