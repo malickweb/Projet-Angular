@@ -8,8 +8,23 @@ nav {
     @include transition(padding .2s linear);
   }
 
+  &.navPaddingPhone .navbar-header{
+    img.logo {
+      width: 100px;
+      margin: 20px 0 0;
+      @include transition(margin .2s linear);
+
+      //screen phone; margin: top;
+      @media (max-width: 768px) {
+          margin: 0;
+          @include transition(margin .2s linear);
+      }
+    }
+  }
+
   img.logo {
     width: 100px;
+    margin: 0;
     @include transition(margin .2s linear);
   }
 
@@ -31,6 +46,7 @@ nav {
   div.navPaddingTab.collapse {
     padding: 15px 0;
     @include transition(padding .2s linear);
+
     ul li img {
       margin: 5px 0;
       @include transition(margin .2s linear);
