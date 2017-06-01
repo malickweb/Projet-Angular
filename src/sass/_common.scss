@@ -31,13 +31,17 @@ ul {
 $ids: (
  #presentation,
  #competence,
- #site,
+ #projet,
  #formulaire
 );
 
 @each $id in $ids {
   #{$id} {
     padding: 50px 0 0;
+
+    h1 {
+      margin: 20px 0;
+    }
   }
 }
 

@@ -1,21 +1,5 @@
 @import ".../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
-$path-taxi: "../../../assets/images/taxi-moto.png";
-$path-shopping: "../../../assets/images/shopping-flux.png";
-$color-base: #9d9d9d;
-
-$img: (
- (taxi-moto $path-taxi),
- (shopping-flux $path-shopping)
-);
-
-@each $site, $color in $img {
-  .#{$site} {
-    @include size(100%, 255px);
-    background-size: 100%;
-
-  }
-}
 .card {
   min-height: 700px;
 

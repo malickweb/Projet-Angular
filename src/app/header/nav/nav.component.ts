@@ -30,7 +30,7 @@ export class NavComponent implements OnInit {
 // function link selected: change Background-color et color.
   selectedIndex: number;
 
-  select(index: number) {
+  select(index: number, e) {
     this.selectedIndex = index;
   }
 
