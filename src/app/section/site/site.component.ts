@@ -44,7 +44,7 @@ export class SiteComponent implements OnInit {
       'Shopping-Flux',
       './assets/images/logos/shopping-flux.jpg',
       'http://shopping-feed.com/',
-      'Refonte et intégration d\' une nouvelle interface de l\' application.',
+      'Refonte et intégration d\' une nouvelle interface de l\'application.',
       [
         'Intégration continue',
         'Intégration des maquettes HTML5 / CSS3 (sass) / JavaScript',

@@ -4,66 +4,81 @@
       <div class="row">
         <div class="col-xs-12">
           <h1 class="text-center">{{ title }}</h1>
-          <form #formulaire="ngForm"
-                (ngSubmit)="onSubmit()"
-                action="form()"
-                *ngIf="!contact">
-            <div class="form-group">
-              <label for="name">Nom *</label>
+          <div class="row">
+            <div class="col-xs-6">
+              <form #formulaire="ngForm"
+                    (ngSubmit)="onSubmit()"
+                    action="form()"
+                    *ngIf="!contact">
+                <div class="form-group">
+                  <label for="name">Nom *</label>
 
-              <input type="text"
-                     id="name"
-                     class="form-control"
-                     placeholder="Votre name"
-                     [(ngModel)]="model.name"
-                     name="name"
-                     #name="ngModel"
-                     pattern="[a-zA-Z ]*"
-                     ngModel
-                     required />
+                  <input type="text"
+                         id="name"
+                         class="form-control"
+                         placeholder="Votre name"
+                         [(ngModel)]="model.name"
+                         name="name"
+                         #name="ngModel"
+                         pattern="[a-zA-Z ]*"
+                         ngModel
+                         required />
 
-              <div *ngIf="name.touched && !name.valid"
-                   class="alert alert-danger bg-danger">
-                Votre nom est nécessaire
+                  <div *ngIf="name.touched && !name.valid"
+                       class="alert alert-danger bg-danger">
+                    Votre nom est nécessaire
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email *</label>
+
+                  <input type="email"
+                         id="email"
+                         class="form-control"
+                         placeholder="Votre email"
+                         [(ngModel)]="model.email"
+                         name="email"
+                         #email="ngModel"
+                         email
+                         ngModel
+                         required />
+
+                  <div *ngIf="email.touched && !email.valid"
+                       class="alert alert-danger bg-danger">
+                    Votre Email est nécessaire
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message *</label>
+
+                  <textarea id="message"
+                            class="form-control"
+                            placeholder="Laisser votre message"
+                            name="message"
+                            rows="8"
+                            cols="80"
+                            [(ngModel)]="model.message"
+                            required>
+                  </textarea>
+                </div>
+
+                <button type="submit"
+                        class="btn btn-success"
+                        [disabled]="!formulaire.form.valid"
+                        (click)="form()">submit</button>
+              </form>
+            </div>
+            <div class="col-xs-6">
+              <div class="links">
+                <button>
+
+                  <a href="https://www.linkedin.com/in/malick-belgrine-9a4a68a1/" target="_blank">
+                    <img src="./assets/images/linkedin_logo.png" alt="Linkedin">
+                  </a>
+                </button>
               </div>
             </div>
-            <div class="form-group">
-              <label for="email">Email *</label>
-
-              <input type="email"
-                     id="email"
-                     class="form-control"
-                     placeholder="Votre email"
-                     [(ngModel)]="model.email"
-                     name="email"
-                     #email="ngModel"
-                     email
-                     ngModel
-                     required />
-
-              <div *ngIf="email.touched && !email.valid"
-                   class="alert alert-danger bg-danger">
-                Votre Email est nécessaire
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="message">Message *</label>
-
-              <textarea id="message"
-                        class="form-control"
-                        name="message"
-                        rows="8"
-                        cols="80"
-                        [(ngModel)]="model.message"
-                        required>
-              </textarea>
-            </div>
-
-            <button type="submit"
-                    class="btn btn-success"
-                    [disabled]="!formulaire.form.valid"
-                    (click)="form()">submit</button>
-          </form>
+          </div>
           <div *ngIf="contact" class="card">
             <h2>Votre message</h2>
             <div class="row">

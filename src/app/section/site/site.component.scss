@@ -31,16 +31,13 @@
   h4 {
     font-family: "Nunito-Bold";
     margin: 20px 0;
+    word-break: normal;
   }
 
   ul {
     li {
       padding: 5px 15px 0;
-      &:before {
-        content: "";
-        list-style-type: lower-latin;
-      }
-
+      
       //screen phone; padding reset;
       @media (max-width: 768px) {
         padding: 0;

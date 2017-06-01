@@ -28,3 +28,13 @@ button[disabled], button[disabled]:hover {
 .card {
   background-color: #fff;
 }
+
+.links {
+  button {
+    background-color: transparent;
+    border: none;
+    img {
+      width: 100px
+    }
+  }
+}
