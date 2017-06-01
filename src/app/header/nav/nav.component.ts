@@ -112,7 +112,7 @@ export class NavComponent implements OnInit {
   console.log(document.getElementsByTagName('nav'));
   console.log(header + '  px');
 
-    if(sro > header ) {
+    if(sro > header - 10 ) {
         console.log(this.headerScroll);
         this.headerScroll = false;
     }

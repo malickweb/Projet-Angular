@@ -28,11 +28,23 @@ nav {
     @include transition(margin .2s linear);
   }
 
-  li.selected {
-    background-color: #098fc0;
+  li {
+    @include transition(background-color .2s linear);
+
+    &.selected {
+      background-color: #098fc0;
+      @include transition(background-color .2s linear);
+
+      > a {
+        color: #fff;
+        @include transition(color .2s linear);
+
+      }
+    }
 
     > a {
-      color: #fff;
+      @include transition(color .2s linear);
+
     }
   }
 }

@@ -7,10 +7,6 @@ html {
   }
 }
 
-section {
-  padding: 25px 0;
-}
-
 ul {
   padding: 0;
 
@@ -27,6 +23,13 @@ ul {
 }
 
 // Loop id#
+
+#presentation {
+  margin-top: 80px;
+  @media (max-width: 768px) {
+    margin-top: 65px;
+  }
+}
 
 $ids: (
  #presentation,
