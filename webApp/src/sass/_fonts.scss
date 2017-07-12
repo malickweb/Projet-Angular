@@ -1,0 +1,55 @@
+$path-font: "assets/fonts/";
+
+@font-face {
+  font-family: "Nunito";
+  src: url($path-font + "Nunito/Nunito-Regular.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito-Bold";
+  src: url($path-font + "Nunito/Nunito-SemiBold.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cabin";
+  src: url($path-font + "Cabin/Cabin-Regular.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cabin-Medium";
+  src: url($path-font + "Cabin/Cabin-Medium.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cabin-Bold";
+  src: url($path-font + "Cabin/Cabin-Bold.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT-Bold";
+  src: url($path-font + "PT_Sans_Caption/PT_Sans-Caption-Web-Bold.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT";
+  src: url($path-font + "PT_Sans_Caption/PT_Sans-Caption-Web-Regular.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik-Bold";
+  src: url($path-font + "Rubik/Rubik-Bold.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url($path-font + "Rubik/Rubik-Regular.ttf");
+  font-style: normal;
+}

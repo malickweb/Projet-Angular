@@ -1,0 +1,75 @@
+@import ".../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+nav {
+  box-shadow: 0px 1px 5px 1px #222;
+  @include transition(padding .2s linear);
+
+  .collapse {
+    @include transition(padding .2s linear);
+  }
+
+  &.navPaddingPhone .navbar-header{
+    img.logo {
+      width: 100px;
+      margin: 20px 0 0;
+      @include transition(margin .2s linear);
+
+      //screen phone; margin: top;
+      @media (max-width: 768px) {
+          margin: 0;
+          @include transition(margin .2s linear);
+      }
+    }
+  }
+
+  img.logo {
+    width: 100px;
+    margin: 0;
+    @include transition(margin .2s linear);
+  }
+
+  li {
+    @include transition(background-color .2s linear);
+
+    &.selected {
+      background-color: #098fc0;
+      @include transition(background-color .2s linear);
+
+      > a {
+        color: #fff;
+        @include transition(color .2s linear);
+
+      }
+    }
+
+    > a {
+      @include transition(color .2s linear);
+
+    }
+  }
+}
+
+//screen tablet + desktop; text right;
+@media (min-width: 768px) {
+  .navbar-nav {
+      float: right;
+  }
+
+  div.navPaddingTab.collapse {
+    padding: 15px 0;
+    @include transition(padding .2s linear);
+
+    ul li img {
+      margin: 5px 0;
+      @include transition(margin .2s linear);
+    }
+  }
+}
+
+//screen phone; Padding: top, bottom;
+@media (max-width: 768px) {
+  .navPaddingPhone {
+    padding: 20px 0;
+    @include transition(padding .2s linear);
+  }
+}

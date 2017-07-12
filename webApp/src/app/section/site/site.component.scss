@@ -1,0 +1,47 @@
+@import ".../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+.card {
+  min-height: 700px;
+
+  //screen phone; min-height card;
+  @media (max-width: 768px) {
+    min-height: 500px;
+  }
+
+  a {
+    display: block;
+    padding: 15px 0;
+    color: inherit;
+
+    h2 {
+      font-family: "Nunito-Bold";
+      margin: 20px 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  img {
+    width: 100%;
+    box-shadow: 3px 5px 6px 2px #c0c0c0;
+  }
+
+  h4 {
+    font-family: "Nunito-Bold";
+    margin: 20px 0;
+    word-break: normal;
+  }
+
+  ul {
+    li {
+      padding: 5px 15px 0;
+      
+      //screen phone; padding reset;
+      @media (max-width: 768px) {
+        padding: 0;
+      }
+    }
+  }
+}

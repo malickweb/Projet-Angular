@@ -1,0 +1,26 @@
+<div id="competence">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center">{{ title }}</h1>
+          <ul class="row">
+            <li id="{{c.lang}}" class="col-sm-12 col-md-6 col-lg-4 {{c.offset}}"
+                *ngFor="let c of competences; let index = index">
+              <div class="{{c.lang}} card">
+                <img [src]="c.url" [alt]="c.skill">
+                <p>
+                  {{ c.skill }}
+                </p>
+                <p>
+                  {{ c.level }} %
+                  <!-- {{index}} -->
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
