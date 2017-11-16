@@ -52,7 +52,11 @@ import {
 })
 export class PresentationComponent {
 
-  public title: string = 'Présentation';
+  //public title: string = 'Présentation';
+
+  public titlePresentation:string = "Malick Belgrine";
+
+  public textPresentation:string = "Développeur Front-end";
 
   public log: string = 'https://app.shopping-feed.com/images/registration/logo_sf_other.svg';
 //
@@ -66,11 +70,11 @@ export class PresentationComponent {
   state: string = 'inactive';
   state1: string = 'inactive';
   toggleMove() {
-      this.state = (this.state === 'inactive' ? 'active' : 'inactive');
+    this.state = (this.state === 'inactive' ? 'active' : 'inactive');
   }
 
   hoverMove() {
-      this.state = (this.state === 'inactive' ? 'active' : 'inactive');
+    this.state = (this.state === 'inactive' ? 'active' : 'inactive');
   }
 
   mouseEnter(div : string){

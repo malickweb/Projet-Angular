@@ -94,7 +94,7 @@ export class NavComponent implements OnInit {
   // console.log('Height presentation' + ' ' + document.documentElement.offsetHeight);
   // console.log('height total' + ' ' +  document.documentElement.scrollHeight);
 
-  console.log('Height presentation' + ' ' + document.documentElement.scrollHeight + 'px');
+  //console.log('Height presentation' + ' ' + document.documentElement.scrollHeight + 'px');
 
 
 
@@ -109,15 +109,15 @@ export class NavComponent implements OnInit {
   //  }
   let sro = document.body.scrollTop;
   let header = document.getElementById("header").offsetHeight;
-  console.log(document.getElementsByTagName('nav'));
-  console.log(header + '  px');
+  // console.log(document.getElementsByTagName('nav'));
+  // console.log(header + '  px');
 
     if(sro > header - 10 ) {
-        console.log(this.headerScroll);
+        //console.log(this.headerScroll);
         this.headerScroll = false;
     }
     else {
-      console.log(this.headerScroll);
+      //console.log(this.headerScroll);
       this.headerScroll = true;
     }
   }

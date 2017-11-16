@@ -5,7 +5,16 @@
         <div class="col-xs-12">
           <h1 class="text-center">{{ title }}</h1>
           <div class="row">
-            <div class="col-xs-6">
+            <div class="col-xs-12 col-md-6">
+              <div class="links">
+                <button>
+                  <a href="https://www.linkedin.com/in/malick-belgrine-9a4a68a1/" target="_blank">
+                    <img src="./assets/images/linkedin_logo.png" alt="Linkedin" title="Linkedin">
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
               <form #formulaire="ngForm"
                     (ngSubmit)="onSubmit()"
                     action="form()"
@@ -67,16 +76,6 @@
                         [disabled]="!formulaire.form.valid"
                         (click)="form()">submit</button>
               </form>
-            </div>
-            <div class="col-xs-6">
-              <div class="links">
-                <button>
-
-                  <a href="https://www.linkedin.com/in/malick-belgrine-9a4a68a1/" target="_blank">
-                    <img src="./assets/images/linkedin_logo.png" alt="Linkedin">
-                  </a>
-                </button>
-              </div>
             </div>
           </div>
           <div *ngIf="contact" class="card">

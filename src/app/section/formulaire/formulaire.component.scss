@@ -8,6 +8,24 @@ $img-formulaire: url("../../../assets/images/logo-main1.jpg") no-repeat center c
   background-size: cover;
 }
 
+.links {
+  display: inline-block;
+
+  button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    a {
+      display: block;
+
+      img {
+        width: 40px;
+      }
+    }
+  }
+}
+
 label, input, textarea {
   display: block;
   margin: 10px 0;
@@ -26,15 +44,6 @@ button[disabled], button[disabled]:hover {
 }
 
 .card {
+  margin: 10px 0;
   background-color: #fff;
-}
-
-.links {
-  button {
-    background-color: transparent;
-    border: none;
-    img {
-      width: 100px
-    }
-  }
 }
