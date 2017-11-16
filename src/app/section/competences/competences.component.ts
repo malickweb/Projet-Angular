@@ -33,13 +33,8 @@ export class CompetencesComponent implements OnInit {
     let $hauteurScroll = document.body.scrollTop;
     let $Html = document.getElementById('html');
     let hauteurHtml:number = $Html.offsetTop;
-    console.log(hauteurHtml);
     let h:any = $Html.offsetParent;
     var rect = h.getClientRects();
-    console.log(rect[length].top);
-    console.log(rect[length].bottom);
-
-    console.log(this.competences[0].lang);
 
     let i:number;
     let tabComp = this.competences[0].lang;
@@ -49,7 +44,6 @@ export class CompetencesComponent implements OnInit {
       //console.log(this.competences[i].lang);
 
       let $hmlt = document.getElementById(this.competences[i].lang);
-      console.log($hmlt.getClientRects());
       let foo = $hmlt.getClientRects();
       if(foo[length].top) {
         this.competences[i].lang
