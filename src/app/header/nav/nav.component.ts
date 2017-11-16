@@ -62,14 +62,7 @@ import { Logo, Link } from "./nav.model";
 })
 export class NavComponent implements OnInit {
 
-  public logos: Array<Logo> = [
-    new Logo('https://app.shopping-feed.com/images/registration/logo_sf_other.svg', 'logo_sf_other')
-  ];
-
-  public log: string= 'https://app.shopping-feed.com/images/registration/logo_sf_other.svg';
-
   public links: Array<Link> = [
-    new Link('Accueil', ''),
     new Link('Présentation', 'presentation'),
     new Link('Compétences', 'competence'),
     new Link('Projets', 'projet'),
@@ -89,35 +82,13 @@ export class NavComponent implements OnInit {
   //In chrome and some browser scroll is given to body tag
   let pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
   let max = document.documentElement.scrollHeight;
-
-  // console.log('SCROLL'+ ' ' + document.body.scrollTop);
-  // console.log('Height presentation' + ' ' + document.documentElement.offsetHeight);
-  // console.log('height total' + ' ' +  document.documentElement.scrollHeight);
-
-  //console.log('Height presentation' + ' ' + document.documentElement.scrollHeight + 'px');
-
-
-
-
-  //   if(pos == max )   {
-  //   //Do your action here
-  //     console.log('stop');
-  //   }
-  //   if(pos > 510 )   {
-  //   //Do your action here
-  //     console.log('start');
-  //  }
   let sro = document.body.scrollTop;
   let header = document.getElementById("header").offsetHeight;
-  // console.log(document.getElementsByTagName('nav'));
-  // console.log(header + '  px');
 
     if(sro > header - 10 ) {
-        //console.log(this.headerScroll);
         this.headerScroll = false;
     }
     else {
-      //console.log(this.headerScroll);
       this.headerScroll = true;
     }
   }

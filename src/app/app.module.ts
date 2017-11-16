@@ -5,8 +5,6 @@ import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-//import {FormBuilder, FormGroup} from '@angular/forms';
-
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
