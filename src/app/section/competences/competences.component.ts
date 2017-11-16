@@ -36,6 +36,8 @@ export class CompetencesComponent implements OnInit {
     let h:any = $Html.offsetParent;
     var rect = h.getClientRects();
 
+    
+
     let i:number;
     let tabComp = this.competences[0].lang;
     for (i = 0; i < this.competences.length; i++) {
